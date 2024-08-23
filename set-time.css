@@ -1,0 +1,61 @@
+.set-timer-page {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hh,
+.mm,
+.ss {
+  display: inline-block;
+  font-size: 8rem;
+  cursor: pointer;
+  font-family: technology;
+  width: 8rem;
+}
+
+.dropdown ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 1.5rem;
+  background-color: rgb(204, 204, 204);
+  padding: 0;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  width: 7rem;
+  font-family: numix;
+  color: black;
+}
+
+.dropdown {
+  height: 8rem;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.dropdown ul li {
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown ul li:hover {
+  background-color: black;
+  color: white;
+}
+
+.set-btn-2 {
+  display: block;
+  margin: 2rem auto;
+  background-color: var(--start-btn);
+  width: 8rem;
+  height: 4rem;
+}
+
+.action-btns {
+  display: flex;
+  justify-content: space-around;
+}
