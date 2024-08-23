@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  --timer-btn: rgb(0, 255, 132);
+  --start-btn: rgb(30, 255, 0);
+  --danger-btn: rgb(255, 0, 0);
+  --disable-btn: rgb(140, 140, 140);
+  --disable-clr: rgb(61, 60, 60);
+  --primary-clr: rgb(0, 0, 255);
+  --active-clr: rgb(255, 72, 0);
+}
+
+/* ----- Scrollbar Styling -----*/
+
+/* Width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+@font-face {
+  font-family: technology;
+  src: url(./fonts/technology/Technology-Bold.ttf);
+}
+
+@font-face {
+  font-family: nunito;
+  src: url(./fonts/nunito/Nunito-Regular.ttf);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(38, 37, 37);
+  color: white;
+  font-family: numito;
+  align-items: center;
+}
+
+.head {
+  position: absolute;
+  top: 0rem;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.head {
+  width: 100%;
+}
+
+h1 {
+  font-family: technology;
+  margin: 2rem 0 1rem 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--timer-btn);
+  border-radius: 1000px;
+  width: 5rem;
+  height: 5rem;
+  font-size: 1rem;
+}
+
+button:hover {
+  filter: brightness(70%);
+}
+
+.timer-clock {
+  text-align: center;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.action-btns button {
+  width: 8rem;
+  height: 4rem;
+  margin: 1rem 0;
+}
+
+.set-timer-shortcut {
+  margin: 1.5rem 0;
+}
+
+.set-btn {
+  color: white;
+  background-color: var(--primary-clr);
+}
+
+.start-btn {
+  background-color: var(--start-btn);
+}
+
+.reset-btn {
+  color: white;
+  background-color: var(--danger-btn);
+}
+
+.disable-btn {
+  color: var(--disable-clr);
+  background-color: var(--disable-btn);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.active {
+  background-color: var(--active-clr);
+  color: white;
+}
+
+.note-area textarea {
+  text-align: center;
+  width: 98dvw;
+  padding: 1rem;
+  font-family: nunito;
+  margin: 0.5rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  resize: none;
+  background-color: transparent;
+  color: white;
+  border: white;
+}
+
+.note-area {
+  display: flex;
+}
