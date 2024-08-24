@@ -288,4 +288,11 @@ body.addEventListener("click", () => {
   localStorage.setItem("alertMsg", noteMsg);
 });
 
+// Disabling refresh
+body.addEventListener("keydown", (e) => {
+  if (e.ctrlKey && e.key === "r") {
+    e.preventDefault();
+  }
+});
+
 alertMsgInp.value = localStorage.getItem("alertMsg");
