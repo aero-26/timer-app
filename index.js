@@ -154,6 +154,7 @@ function countDown() {
     replaceH1();
     startTimer();
   } else if (totalSec === 0 && !reset) {
+    localStorage.setItem("totalSecBac", "0");
     replaceH1();
     blink = true;
     effect();
