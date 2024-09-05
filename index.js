@@ -12,6 +12,7 @@ const h1 = document?.querySelector("h1");
 const resetBtn = document.querySelector(".reset-btn");
 const alertMsgInp = document?.querySelector("textarea");
 const body = document.querySelector("body");
+const fakeVid = document.querySelector("video");
 // -------------------------------------------
 
 // Navigate to set time page
@@ -286,6 +287,8 @@ alertMsgInp?.addEventListener("keydown", (e) => {
 body.addEventListener("click", () => {
   let noteMsg = alertMsgInp.value;
   localStorage.setItem("alertMsg", noteMsg);
+  // Play Fake video
+  fakeVid?.play();
 });
 
 // Disabling refresh
@@ -296,3 +299,6 @@ body.addEventListener("keydown", (e) => {
 });
 
 alertMsgInp.value = localStorage.getItem("alertMsg");
+
+// Play fake vid
+body.click();
