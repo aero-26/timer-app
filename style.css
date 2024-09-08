@@ -135,3 +135,40 @@ button:hover {
 .note-area {
   display: flex;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 1135px) {
+  h1 {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .head {
+    z-index: 2;
+  }
+  h1 {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  h1 {
+    margin-top: 10rem;
+  }
+  .note-area textarea {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 367px) {
+  h1 {
+    margin-top: 15rem;
+  }
+}
+
+@media screen and (max-width: 327px) {
+  .note-area textarea {
+    font-size: 1rem;
+  }
+}
