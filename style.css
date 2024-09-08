@@ -40,6 +40,7 @@ body {
 .head {
   position: absolute;
   top: 0rem;
+  z-index: 2;
 }
 
 .alert {
@@ -144,9 +145,6 @@ button:hover {
 }
 
 @media screen and (max-width: 580px) {
-  .head {
-    z-index: 2;
-  }
   h1 {
     margin-top: 4rem;
   }
@@ -157,7 +155,7 @@ button:hover {
     margin-top: 10rem;
   }
   .note-area textarea {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -169,6 +167,6 @@ button:hover {
 
 @media screen and (max-width: 327px) {
   .note-area textarea {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
