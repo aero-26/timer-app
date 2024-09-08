@@ -50,7 +50,8 @@
 .set-btn-2 {
   display: block;
   margin: 2rem auto;
-  background-color: var(--start-btn);
+  background-color: var(--primary-clr);
+  color: white;
   width: 8rem;
   height: 4rem;
 }
