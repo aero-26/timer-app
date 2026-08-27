@@ -7,6 +7,7 @@ const minusBtn = document?.querySelector(".minus-btn");
 const setTimeBtn = document
   ?.querySelector(".set-timer-shortcut")
   ?.querySelectorAll("button");
+const setTimeBtnDiv = document?.querySelector(".set-timer-shortcut");
 const startBtn = document?.querySelector(".start-btn");
 const h1 = document?.querySelector("h1");
 const resetBtn = document.querySelector(".reset-btn");
@@ -14,6 +15,16 @@ const alertMsgInp = document?.querySelector("textarea");
 const body = document.querySelector("body");
 const fakeVid = document.querySelector("video");
 // -------------------------------------------
+
+// Function to show or hide the set-timer div
+
+function showTimerButtons(trueOrFalse) {
+  if (trueOrFalse) {
+    setTimeBtnDiv.style.display = "";
+  } else {
+    setTimeBtnDiv.style.display = "none";
+  }
+}
 
 // Navigate to set time page
 setBtn?.addEventListener("click", () => {
@@ -166,6 +177,7 @@ function countDown() {
 }
 
 const startTimer = () => {
+  showTimerButtons(false);
   setTimeout(countDown, 1000);
 };
 
@@ -204,6 +216,7 @@ startBtn?.addEventListener("click", () => {
     blink = true;
     effect();
     startBtn.textContent = "Start";
+    showTimerButtons(true);
   }
 });
 
@@ -274,6 +287,7 @@ resetBtn?.addEventListener("click", () => {
   setBtn.classList.remove("hidden");
   blink = false;
   hideStartBtn();
+  showTimerButtons(true);
 });
 //----------------------------------------
 
